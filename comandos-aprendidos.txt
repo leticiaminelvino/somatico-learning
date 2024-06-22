@@ -1,0 +1,41 @@
+ls -ltrh, o h é pra ver a quantidade de MB
+
+history
+
+md5sum //util pra qnd vc enviar um arquivo mto grande e n tem crtz se ele chegou/baixou corretamente o hash vai ser o msm se sim
+
+less -SN <arquvio>   // less -SinglelineNumber
+
+grep 
+
+> gitpod /workspace/somatico-learning (main) $ samtools view -H normal_JAK2.bam | grep RG
+@RG     ID:1    PL:illumina     PU:WP044.sorted.ddup.bam        LB:normal       SM:WP044
+> gitpod /workspace/somatico-learning (main) $ samtools view -H normal_JAK2.bam | grep RG | cut -f6
+SM:WP044
+> gitpod /workspace/somatico-learning (main) $ samtools view -H normal_JAK2.bam | grep RG | cut -f6 | sed -e "s/SM://g"
+WP044
+
+
+> gitpod /workspace/somatico-learning (main) $ ls -1 | grep bam
+normal_JAK2.bam
+normal_JAK2.bam.bai
+tumor_JAK2.bam
+tumor_JAK2.bam.bai
+tumor_wp017.bam
+tumor_wp017.bam.bai
+tumor_wp018.bam
+tumor_wp018.bam.bai
+tumor_wp190.bam
+tumor_wp190.bam.bai
+tumor_wp191.bam
+tumor_wp191.bam.bai
+> gitpod /workspace/somatico-learning (main) $ ls -1 | grep JAK2
+normal_JAK2.bam
+normal_JAK2.bam.bai
+tumor_JAK2.bam
+tumor_JAK2.bam.bai
+> gitpod /workspace/somatico-learning (main) $ ls -1 | grep JAK2 | grep -v bai
+normal_JAK2.bam
+tumor_JAK2.bam
+
+contamination precisa estar abaixo de 2
