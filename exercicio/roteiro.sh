@@ -1,3 +1,6 @@
+## arquivos necessarios na pasta para rodar esses comandos
+# ambos af-only-gnomad-chr13-chr19.vcf
+# os 8 arquivos tumor_wp
 
 sudo apt-get install samtools
 
